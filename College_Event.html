@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        nav {
+            background-color: #1e3a8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 40px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1e3a8a;
+        }
+        .details {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1e3a8a;
+            color: white;
+        }
+        .speakers {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .card h3 {
+            color: #2563eb;
+        }
+        form {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e3a8a;
+        }
+        .contact {
+            text-align: center;
+            background-color: #e5e7eb;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 30px;
+            }
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+            .details,
+            .speakers {
+                display: block;
+                width: 90%;
+                margin: 10px auto;
+            }
+            .box,
+            .card {
+                width: 90%;
+            }
+            section {
+                padding: 30px 5%;
+            }
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#details">Details</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="header" id="home">
+        <h1>TechFest 2026</h1>
+        <p>Annual College Technology & Innovation Event</p>
+        <p>September 28, 2026 | Alliance University</p>
+    </div>
+    <section id="details">
+        <h2>Event Details</h2>
+
+        <div class="details">
+
+            <div class="box">
+                <h3>📅 Date</h3>
+                <p>28 September 2026</p>
+            </div>
+
+            <div class="box">
+                <h3>📍 Venue</h3>
+                <p>Alfresco</p>
+            </div>
+
+            <div class="box">
+                <h3>⏰ Time</h3>
+                <p>9:00 AM - 5:00 PM</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Speaker</th>
+            </tr>
+
+            <tr>
+                <td>9:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Prof Raghav</td>
+            </tr>
+
+            <tr>
+                <td>10:00 AM</td>
+                <td>UI UX Technology</td>
+                <td>Prof Abhishek</td>
+            </tr>
+
+            <tr>
+                <td>12:00 PM</td>
+                <td>Lunch Break</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>2:00 PM</td>
+                <td>Web Development Workshop</td>
+                <td>Prof. Raghav</td>
+            </tr>
+
+            <tr>
+                <td>4:00 PM</td>
+                <td>Closing Ceremony</td>
+                <td>HOD J. Lenin</td>
+            </tr>
+        </table>
+    </section>
+    <section id="speakers">
+        <h2>Our Speakers</h2>
+
+        <div class="speakers">
+
+            <div class="card">
+                <h3>Prof. Raghav </h3>
+                <p>Web Development Expert</p>
+            </div>
+
+            <div class="card">
+                <h3>Prof. Abhishek</h3>
+                <p>UI/UX Designer</p>
+            </div>
+
+            <div class="card">
+                <h3>HOD J. Lenin</h3>
+                <p>Head Of Computer Application's Department</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="register">
+        <h2>Event Registration</h2>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone:</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <button type="submit">Register Now</button>
+        </form>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <p>Email: alliance@college.com</p>
+        <p>Phone: +91 12345 67890</p>
+        <p>Alfresco, Alliance University</p>
+    </section>
+
+</body>
+</html>

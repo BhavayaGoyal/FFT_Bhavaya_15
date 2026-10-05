@@ -1,0 +1,191 @@
+<html>
+<head>
+    <title>Transitions and Animations</title>
+
+    <style>
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            border-radius: 50%;
+            transition: 1s;
+        }
+
+        .box1:hover {
+            transform: scale(1.5);
+        }
+
+        .box2 {
+            width: 150px;
+            height: 80px;
+            background: lightgreen;
+            border-radius: 20px;
+            transition: 1s;
+        }
+
+        .box2:hover {
+            transform: rotate(20deg);
+        }
+
+        .box3 {
+            width: 150px;
+            height: 80px;
+            background: pink;
+            border-radius: 50%;
+            transition: 1s;
+        }
+
+        .box3:hover {
+            width: 200px;
+        }
+
+        .box4 {
+            width: 80px;
+            height: 80px;
+            background: orange;
+            transform: rotate(45deg);
+            transition: 1s;
+        }
+
+        .box4:hover {
+            transform: rotate(90deg);
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background: violet;
+            transition: 1s;
+        }
+
+        .box5:hover {
+            border-radius: 50%;
+        }
+
+        .ani1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: move 2s infinite alternate;
+            border-radius: 50%;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(200px);
+            }
+        }
+
+
+        .ani2 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            animation: rotate 2s infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .load{
+                width:100px;
+                height:100px;
+                border: 5px solid red;
+                border-radius: 50%;
+                border-top:5px solid blue;
+                animation: spin 0.9ms linear infinite;
+            }
+            @keyframes spin{
+                from{
+                    transform: rotate(360deg);
+                }
+            }
+
+        .ani3 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            animation: size 2s infinite alternate;
+        }
+
+        @keyframes size {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.5);
+            }
+        }
+
+
+        .ani4 {
+            width: 100px;
+            height: 100px;
+            background: purple;
+            animation: color 2s infinite alternate;
+        }
+
+        @keyframes color {
+            from {
+                background: purple;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+
+
+        .ani5 { 
+            width: 100px; 
+            height: 100px; 
+            background: brown; 
+            animation: spin 2s infinite alternate; 
+        } 
+
+        @keyframes spin { 
+            from { 
+                transform: rotate(0deg); 
+            } 
+
+            to { 
+                transform: rotate(360deg); 
+            } 
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1> Transitions</h1>
+
+    <div class="box1"></div><br><br>
+    <div class="box2"></div><br><br>
+    <div class="box3"></div><br><br>
+    <div class="box4"></div><br><br>
+    <div class="box5"></div><br><br>
+
+
+    <h1>Animations</h1>
+    <div class="load"></div>
+    <div class="ani1"></div><br><br>
+    <div class="ani2"></div><br><br>
+    <div class="ani3"></div><br><br>
+    <div class="ani4"></div><br><br>
+    <div class="ani5"></div>
+
+</body>
+</html>

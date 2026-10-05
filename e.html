@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Student Registration Form</title>
+		<style>
+			body{
+				font-family: Arial, sans-serif;
+				background-color: #f2f2f2
+				}
+			.container{
+				width: 400px;
+				margin: 3px auto;
+				padding:20px;
+				background-color: white;
+				border: 1px solid #ccc;}
+			h2{
+				text-align: center;
+			}
+			label{
+				display:block;
+				margin-top: 10px;
+			}
+			input, select, textarea{
+				width: 100%;
+				padding: 8px;
+				margin-top: 5px;
+				box-sizing: border-box;
+			}
+			textarea{
+				height: 70px;
+			}
+			button{
+				background: black;
+				color: white;
+				margin-top: 15px;
+				padding: 8px 15px;
+				margin-right: 5px;
+				cursor: pointer;
+			}
+			button:hover{
+				color: black;
+				background: white
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		<h2>Student Registration Form</h2>
+		<form>
+			<label> Name: </label>
+			<input type="text"><br><br>
+			<label> Email: </label>
+			<input type="email"> <br><br>
+			<label> Password: </label>
+			<input type="password"><br><br>
+			<label> Gender: </label>
+			<input type="radio" name="gender">Male
+			<input type="radio"name="gender">Female<br><br>
+			<label> Course: </label>
+			<select>
+				<option>Select Course: </option>
+				<option>BCA </option>
+				<option>MCA </option>
+				<option>BSC</option>
+				<option>MSC </option>
+		       </select><br><br>
+			<label> Phone No.: </label>
+			<input type="tel"><br><br>
+			<label> Address: </label>
+			<textarea name="address"></textarea>
+			<button type="submit">Register </button>
+		</form>
+		</div>
+	</body>
+</html>
